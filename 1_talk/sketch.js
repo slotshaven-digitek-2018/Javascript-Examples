@@ -17,6 +17,9 @@ Reference: http://ability.nyu.edu/p5.js-speech/
     var sentence = "";
     var leftDiv;
     var counter;
+	var R;
+	var G;
+	var B;
 
 
 	function setup()
