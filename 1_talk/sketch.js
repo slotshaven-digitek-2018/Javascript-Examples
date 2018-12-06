@@ -55,7 +55,9 @@ function draw()
         document.body.style.backgroundColor = "green";  
     //det sortner for mine øjne
     if(sentence.includes("sort"))
-        document.body.style.backgroundColor = "black";  
+        document.body.style.backgroundColor = "black";
+    if(sentence.includes("blå"))
+        document.body.style.backgroundColor = "blue";
 }
 
 function showResult()
