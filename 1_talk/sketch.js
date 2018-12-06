@@ -18,6 +18,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
     var leftDiv;
     var counter;
     var kat;
+    var paris;
 
 
 	function setup()
@@ -36,6 +37,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
         myRec.onResult = showResult;
 		myRec.start();
         kat = loadImage("data/kattekillinger.jpg");
+        paris = loadImage("data/paris.jpg");
 	}  
 
 	function draw()
@@ -73,6 +75,10 @@ Reference: http://ability.nyu.edu/p5.js-speech/
          if(sentence.includes("killing"))
              {
                 image(kat, 0, 0); 
+             }
+         if(sentence.includes("paris")||sentence.includes("Paris"))
+             {
+                image(paris, 0, 0); 
              }
             
             
