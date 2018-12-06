@@ -17,7 +17,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
     var sentence = "";
     var leftDiv;
     var counter;
-    var kattekillinger = new Image(100, 200);
+    var kat;
 
 
 	function setup()
@@ -35,6 +35,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
 
         myRec.onResult = showResult;
 		myRec.start();
+        kat = loadImage("data/kattekillinger.jpg");
 	}  
 
 	function draw()
@@ -46,20 +47,35 @@ Reference: http://ability.nyu.edu/p5.js-speech/
                ellipse(width/2,height/2,200,200);
            
            }
+        if(sentence.includes("Firkant")||sentence.includes("Square")||sentence.includes("firkant"))
+           {
+               stroke(173,216,230);
+               rect(50, 50, 200, 200);
+           
+           }
             if(sentence.includes("gul"))
-                document.body.style.backgroundColor = "yellow";
+                document.body.style.backgroundColor = "orange";
             if(sentence.includes("rød"))
-                document.body.style.backgroundColor = "red";
+                document.body.style.backgroundColor = "blue";
             if(sentence.includes("orange"))
-               document.body.style.backgroundColor = "orange";
+               document.body.style.backgroundColor = "gul";
             if(sentence.includes("grøn"))
-               document.body.style.backgroundColor = "green";  
+               document.body.style.backgroundColor = "red";
+           if(sentence.includes("blå"))
+               document.body.style.backgroundColor = "green"; 
             //det sortner for mine øjne
             if(sentence.includes("sort"))
                document.body.style.backgroundColor = "black";
-            if(sentence.includes("kat"))
-                kattekillinger.src ='kattekillinger.jpg';
-                document.body.appendChild(kattekillinger);
+           if(sentence.includes("lilla"))
+               document.body.style.backgroundColor = "pink";
+            if(sentence.includes("pink"))
+               document.body.style.backgroundColor = "purple";
+         if(sentence.includes("killing"))
+             {
+                image(kat, 0, 0); 
+             }
+            
+            
                 
                 
                  
