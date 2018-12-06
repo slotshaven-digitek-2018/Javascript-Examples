@@ -57,7 +57,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
             if(sentence.includes("sort"))
                document.body.style.backgroundColor = "black";
             if(sentence.includes("kat"))
-                
+                create.img = "kattekillinger.jpg"
                 
                 
                  
