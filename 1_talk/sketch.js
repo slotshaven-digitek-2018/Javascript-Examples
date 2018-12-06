@@ -41,21 +41,36 @@ Reference: http://ability.nyu.edu/p5.js-speech/
 		// why draw when you can talk || why talk when you can draw??
         if(sentence.includes("cirkel")||sentence.includes("cirkler"))
            {
-               stroke(173,216,230);
+               stroke(R,G,B);
                ellipse(width/2,height/2,200,200);
            
            }
             if(sentence.includes("gul"))
                 document.body.style.backgroundColor = "yellow";
+			    R=255;
+				G=55;
+				B=255;
             if(sentence.includes("rød"))
                 document.body.style.backgroundColor = "red";
+				R=0;
+				G=0;
+				B=255;
             if(sentence.includes("orange"))
                document.body.style.backgroundColor = "orange";
+				R=0;
+				G=255;
+				B=0;
             if(sentence.includes("grøn"))
-               document.body.style.backgroundColor = "green";  
+               document.body.style.backgroundColor = "green";
+				R=255;
+				G=0;
+				B=0;		   
             //det sortner for mine øjne
             if(sentence.includes("sort"))
-               document.body.style.backgroundColor = "black";  
+               document.body.style.backgroundColor = "black";
+				R=255;
+				G=0;
+				B=0;		   
 	}
 
 	function showResult()
