@@ -22,7 +22,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
 
 	function setup()
     {
-		createCanvas(400, 300);
+        createCanvas(400, 300);
 
         igenKnap = createElement('button', 'Prøv igen');
         igenKnap.addClass("hidden");
