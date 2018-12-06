@@ -55,6 +55,12 @@ Reference: http://ability.nyu.edu/p5.js-speech/
                rect(50, 50, 200, 200);
            
            }
+        if(sentence.includes("Trekant")||sentence.includes("Triangle")||sentence.includes("trekant"))
+           {
+               stroke(173,216,230);
+               triangle(50, 50, 200, 200, 310, 80);
+           
+           }
             if(sentence.includes("gul"))
                 document.body.style.backgroundColor = "orange";
             if(sentence.includes("rød"))
