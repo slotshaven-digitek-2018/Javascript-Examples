@@ -27,8 +27,8 @@ function draw() {
            stroke(173,216,230);
            ellipse(width/2,height/2,200,200);
     }
-	if(sentence.includes("lilla"))
-	document.body.style.backgroundColor = "purple";
+    if(sentence.includes("lilla"))
+        document.body.style.backgroundColor = "purple";
     if(sentence.includes("gul"))
         document.body.style.backgroundColor = "yellow";
     if(sentence.includes("rød"))
