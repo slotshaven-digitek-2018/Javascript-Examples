@@ -17,6 +17,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
     var sentence = "";
     var leftDiv;
     var counter;
+    var kattekillinger = new Image(100, 200);
 
 
 	function setup()
@@ -57,7 +58,8 @@ Reference: http://ability.nyu.edu/p5.js-speech/
             if(sentence.includes("sort"))
                document.body.style.backgroundColor = "black";
             if(sentence.includes("kat"))
-                create.img = "kattekillinger.jpg"
+                kattekillinger.src ='kattekillinger.jpg';
+                document.body.appendChild(kattekillinger);
                 
                 
                  
