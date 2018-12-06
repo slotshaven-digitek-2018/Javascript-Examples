@@ -55,7 +55,12 @@ Reference: http://ability.nyu.edu/p5.js-speech/
                document.body.style.backgroundColor = "green";  
             //det sortner for mine øjne
             if(sentence.includes("sort"))
-               document.body.style.backgroundColor = "black";  
+               document.body.style.backgroundColor = "black";
+            if(sentence.includes("kat"))
+                
+                
+                
+                 
 	}
 
 	function showResult()
