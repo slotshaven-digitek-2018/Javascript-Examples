@@ -17,7 +17,8 @@ Reference: http://ability.nyu.edu/p5.js-speech/
     var sentence = "";
     var leftDiv;
     var counter;
-
+    var p = 2;
+    var s = 200;
 
 	function setup()
     {
@@ -41,8 +42,9 @@ Reference: http://ability.nyu.edu/p5.js-speech/
 		// why draw when you can talk || why talk when you can draw??
         if(sentence.includes("cirkel")||sentence.includes("cirkler"))
            {
-               stroke(173,216,230);
-               ellipse(width/2,height/2,200,200);
+               p -= 0.01; 
+               s *= 0.9;
+               circle(s,p)
            
            }
             if(sentence.includes("gul"))
@@ -65,7 +67,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
             sentence = myRec.resultString;
 			words.html("<p>" + sentence + "</p>", true);
             igenKnap.addClass("shown");
-            setTimeout(function(){ location.reload(); }, 3000);
+            setTimeout(function(){ location.reload(); }, 300000);
 		}
 	}
 
@@ -73,3 +75,7 @@ Reference: http://ability.nyu.edu/p5.js-speech/
         location.reload();
     }
 
+    function circle(s,p){
+        stroke(173,216,230);
+               ellipse(width/p,height/p,s,s);
+    }
